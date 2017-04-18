@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+li{
+	list-style:none;
+	float:left;
+	width:100px;
+	height:100px;
+	border:1px solid #000000;}
+</style>
+</head>
+
+<body>
+<div>
+	<li>
+    </li>
+    <li>
+    </li>
+    <li>
+    </li>
+    
+</div>
+<script>
+var div=document.getElementsByTagName("div");
+var li=document.getElementsByTagName("li");
+for(var i=0;i<li.length;i++){//作用域&&和this
+	li[i].s=i;
+	li[i].onmouseover=function(){
+		console.log(this.s)}
+	
+}
+
+function duplicates(arr) {
+	var i=0;
+    while(arr[i]){
+        for(var j=0;j<arr.length-i-1;j++){
+            if(arr[i]===arr[j]){
+                console.log(arr[i])
+            }
+        }
+        i++
+    }
+}duplicates([1, 2, 4, 4, 3, 3, 1, 5, 3]).sort()
+</script>
+</body>
+</html>
