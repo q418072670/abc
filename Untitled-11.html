@@ -1,0 +1,20 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>级联下拉列表</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <input type="text" id="staffLink" /><br>
+<button id="save">保存</button>
+
+    <script>
+       var link0="http://www.uniqlo.cn/search.htm?search=y&scid=1311388204&queryType=cat&scname=VND0"
+		var link1=link0.split("scid=");
+		var link2="http://www.uniqlo.cn/search.htm?scid="+link1[1].split("&")[0];
+	console.log(link2);
+
+    </script>
+</body>
+</html>
