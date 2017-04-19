@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>查询表</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./style/style.css">	
+	
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>查询表 <small>L1指示书</small></h1>
+			</div>
+		</div>
+		
+		<form class="fM form-inline">
+			<div class="form-group">
+				<select id="ab" class="form-control">
+					<option value="a">A店</option>
+					<option value="b">B店</option>
+				</select>
+				<label for="keyword" class="control-label ">Link名称</label>
+				<input type="text" class="form-control input_width" id="keyword" placeholder="keyword">
+				
+			</div>
+			<button class="btn btn-primary" id="search">查询</button>
+		</form>
+		<div>
+			<table class="table table-striped">
+				
+				
+			</table>
+		</div>
+	</div>
+
+	<script src="./script/jquery-3.2.1.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./script/urlencode.js"></script>
+	<script src="./script/index.js"></script>
+
+</body>
+
+</html>
