@@ -1,4 +1,7 @@
+.fM {
+    margin-bottom: 10px;
+}
 
-.fM{
-    margin-bottom:10px;
+.form-group input.input_width {
+    width: 400px;
 }
